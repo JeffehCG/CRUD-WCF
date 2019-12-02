@@ -14,27 +14,27 @@ namespace ListaComprasWCF
     public interface IListaCompraService
     {
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml, UriTemplate = "addLista/{idUsuario};{descricao};{data}")]
+        [WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json, UriTemplate = "addLista/")]
         [FaultContract(typeof(FileNotFoundException))]
-        bool AddLista(string idUsuario, string descricao, string data);
+        bool AddLista(listacompra lista);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml, UriTemplate = "getListas/")]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, UriTemplate = "getListas/")]
         [FaultContract(typeof(FileNotFoundException))]
         List<listacompra> GetListas();
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml, UriTemplate = "getListasUser/{idUsuario}")]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, UriTemplate = "getListasUser/{idUsuario}")]
         [FaultContract(typeof(FileNotFoundException))]
         List<listacompra> GetListasUser(string idUsuario);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml, UriTemplate = "updateLista/{idUsuario};{descricao};{data};{idLista}")]
+        [WebInvoke(Method = "PUT", ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json, UriTemplate = "updateLista/")]
         [FaultContract(typeof(FileNotFoundException))]
-        bool UpdateLista(string idUsuario, string descricao, string data, string idLista);
+        bool UpdateLista(listacompra lista);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml, UriTemplate = "deleteLista/{idLista}")]
+        [WebInvoke(Method = "DELETE", ResponseFormat = WebMessageFormat.Json, UriTemplate = "deleteLista/{idLista}")]
         [FaultContract(typeof(FileNotFoundException))]
         bool DeleteLista(string idLista);
     }

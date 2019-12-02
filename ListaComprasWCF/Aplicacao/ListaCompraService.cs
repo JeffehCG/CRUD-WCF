@@ -12,18 +12,13 @@ namespace ListaComprasWCF
     // OBSERVAÇÃO: Você pode usar o comando "Renomear" no menu "Refatorar" para alterar o nome da classe "ListaCompraService" no arquivo de código e configuração ao mesmo tempo.
     public class ListaCompraService : IListaCompraService
     {
-        public bool AddLista(string idUsuario, string descricao, string data)
+        public bool AddLista(listacompra lista)
         {
             ComprasContext _contexto = new ComprasContext();
             try
             {
-                if(idUsuario != null && descricao != null && data != null)
+                if(lista != null)
                 {
-                    listacompra lista = new listacompra();
-                    lista.id_usuario = Convert.ToInt32(idUsuario);
-                    lista.descricao = descricao;
-                    lista.data_lista = Convert.ToDateTime(data);
-
                     _contexto.listacompras.Add(lista);
                     _contexto.SaveChanges();
 
@@ -113,18 +108,13 @@ namespace ListaComprasWCF
             }
         }
 
-        public bool UpdateLista(string idUsuario, string descricao, string data, string idLista)
+        public bool UpdateLista(listacompra lista)
         {
             ComprasContext _contexto = new ComprasContext();
             try
             {
-                if (idUsuario != null && descricao != null && data != null)
+                if (lista != null)
                 {
-                    listacompra lista = new listacompra();
-                    lista.id_usuario = Convert.ToInt32(idUsuario);
-                    lista.descricao = descricao;
-                    lista.data_lista = Convert.ToDateTime(data);
-
                     _contexto.Entry(lista).State = EntityState.Modified;
                     _contexto.SaveChanges();
 
