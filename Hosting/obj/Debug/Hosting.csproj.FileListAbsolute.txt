@@ -1,0 +1,13 @@
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\bin\Debug\Hosting.exe.config
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\bin\Debug\Hosting.exe
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\bin\Debug\Hosting.pdb
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\bin\Debug\ListaComprasWCF.dll
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\bin\Debug\EntityFramework.dll
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\bin\Debug\ListaComprasWCF.pdb
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\bin\Debug\ListaComprasWCF.dll.config
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\bin\Debug\EntityFramework.xml
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\obj\Debug\Hosting.csprojAssemblyReference.cache
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\obj\Debug\Hosting.csproj.CoreCompileInputs.cache
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\obj\Debug\Hosting.csproj.CopyComplete
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\obj\Debug\Hosting.exe
+C:\Users\dezje\Documents\ListaComprasWCF\Hosting\obj\Debug\Hosting.pdb
